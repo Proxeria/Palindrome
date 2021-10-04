@@ -9,6 +9,7 @@ out if it's a palindrome or not.
  */
 using namespace std;
 
+
 int main() {
   cout << "Enter a word: "; << endl;
   return 0;
