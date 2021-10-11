@@ -27,9 +27,12 @@ int main() {
   int w = 0;
   for (i = 0; i < strlen(input1); i++) {
     processedStr[w] = tolower(input1[i]);
-    w++;
+    if (isalpha(processedStr[w]) || isdigit(processedStr[w])) {
+      w++;
+    }
     processedStr[w] = '\0';
   }
+
   cout << processedStr << endl;
   //char input2[strlen(input1)] = reverseString(input1);
   reverseString(processedStr);
