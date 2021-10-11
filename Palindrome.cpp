@@ -7,6 +7,7 @@ Nick Peterson
 Palindrome
 This program will read in a string from the user and print 
 out if it's a palindrome or not.
+Got base of code from https://stackoverflow.com/questions/53068354/reverse-a-string-using-cstrings-in-c
  */
 using namespace std;
 void reverseString(char arr[80]);
@@ -33,7 +34,7 @@ int main() {
     processedStr[w] = '\0';
   }
 
-  cout << processedStr << endl;
+  //cout << processedStr << endl;
   //char input2[strlen(input1)] = reverseString(input1);
   reverseString(processedStr);
   cout << "The reverse is "<< reversedInput << endl;
